@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Name"
+            android:padding="10dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ed_product_regular_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Regular Price"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ed_product_sale_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Sale Price"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/ed_product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Description"
+            android:padding="10dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:id="@+id/ed_product_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Product Dictionary" />
+
+        <EditText
+            android:id="@+id/ed_product_likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Likes Count"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:imeOptions="actionNext"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green" />
+
+            <CheckBox
+                android:id="@+id/cb_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red" />
+
+            <CheckBox
+                android:id="@+id/cb_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yellow" />
+
+            <CheckBox
+                android:id="@+id/cb_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue" />
+
+            <CheckBox
+                android:id="@+id/cb_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+
+            <CheckBox
+                android:id="@+id/cb_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="cb_green,cb_red,cb_yellow,cb_blue,cb_pink,cb_black"
+                app:flow_horizontalBias="0"
+                app:flow_horizontalGap="15dp"
+                app:flow_horizontalStyle="packed"
+                app:flow_verticalGap="5sp"
+                app:flow_wrapMode="aligned"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rat_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/txt_pick_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Pick Image" />
+
+        <ImageView
+            android:id="@+id/img_picked_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Save" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
